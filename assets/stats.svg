@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-label="Highlights: 5 end-to-end projects, 144 unit tests across two streaming pipelines, 9,830 job postings processed in 4 days, 91 percent filtered by rules, 56 percent lower held-out perplexity after fine-tuning">
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(38 18)">
+      <rect width="212" height="154" rx="14" fill="#111c30" stroke="#1e3a5f"/>
+      <rect x="18" y="0" width="176" height="3.5" rx="1.75" fill="#38bdf8" opacity="0.9"/>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="0.0s" dur="0.6s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" from="0 14" to="0 0" begin="0.0s" dur="0.6s" fill="freeze"/>
+        <text x="106" y="72" text-anchor="middle" font-size="42" font-weight="800" fill="#ffffff">5</text>
+        <text x="106" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#38bdf8">end-to-end projects</text>
+        <text x="106" y="120" text-anchor="middle" font-size="12" fill="#94a3b8">streaming · RAG · ML · LLM</text>
+      </g>
+      <rect x="24" y="136" width="0" height="3" rx="1.5" fill="#38bdf8">
+        <animate attributeName="width" from="0" to="164" begin="0.3s" dur="1.2s" fill="freeze"/>
+      </rect>
+    </g>
+    <g transform="translate(266 18)">
+      <rect width="212" height="154" rx="14" fill="#111c30" stroke="#1e3a5f"/>
+      <rect x="18" y="0" width="176" height="3.5" rx="1.75" fill="#34d399" opacity="0.9"/>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.6s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" from="0 14" to="0 0" begin="0.15s" dur="0.6s" fill="freeze"/>
+        <text x="106" y="72" text-anchor="middle" font-size="42" font-weight="800" fill="#ffffff">144</text>
+        <text x="106" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#34d399">unit tests</text>
+        <text x="106" y="120" text-anchor="middle" font-size="12" fill="#94a3b8">across 2 streaming pipelines</text>
+      </g>
+      <rect x="24" y="136" width="0" height="3" rx="1.5" fill="#34d399">
+        <animate attributeName="width" from="0" to="164" begin="0.44999999999999996s" dur="1.2s" fill="freeze"/>
+      </rect>
+    </g>
+    <g transform="translate(494 18)">
+      <rect width="212" height="154" rx="14" fill="#111c30" stroke="#1e3a5f"/>
+      <rect x="18" y="0" width="176" height="3.5" rx="1.75" fill="#fbbf24" opacity="0.9"/>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.6s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" from="0 14" to="0 0" begin="0.3s" dur="0.6s" fill="freeze"/>
+        <text x="106" y="72" text-anchor="middle" font-size="42" font-weight="800" fill="#ffffff">9,830</text>
+        <text x="106" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#fbbf24">postings processed</text>
+        <text x="106" y="120" text-anchor="middle" font-size="12" fill="#94a3b8">first 4 days of Job Finder</text>
+      </g>
+      <rect x="24" y="136" width="0" height="3" rx="1.5" fill="#fbbf24">
+        <animate attributeName="width" from="0" to="164" begin="0.6s" dur="1.2s" fill="freeze"/>
+      </rect>
+    </g>
+    <g transform="translate(722 18)">
+      <rect width="212" height="154" rx="14" fill="#111c30" stroke="#1e3a5f"/>
+      <rect x="18" y="0" width="176" height="3.5" rx="1.75" fill="#a78bfa" opacity="0.9"/>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="0.44999999999999996s" dur="0.6s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" from="0 14" to="0 0" begin="0.44999999999999996s" dur="0.6s" fill="freeze"/>
+        <text x="106" y="72" text-anchor="middle" font-size="42" font-weight="800" fill="#ffffff">91%</text>
+        <text x="106" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#a78bfa">filtered by rules</text>
+        <text x="106" y="120" text-anchor="middle" font-size="12" fill="#94a3b8">before any LLM scoring</text>
+      </g>
+      <rect x="24" y="136" width="0" height="3" rx="1.5" fill="#a78bfa">
+        <animate attributeName="width" from="0" to="164" begin="0.75s" dur="1.2s" fill="freeze"/>
+      </rect>
+    </g>
+    <g transform="translate(950 18)">
+      <rect width="212" height="154" rx="14" fill="#111c30" stroke="#1e3a5f"/>
+      <rect x="18" y="0" width="176" height="3.5" rx="1.75" fill="#f87171" opacity="0.9"/>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.6s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" from="0 14" to="0 0" begin="0.6s" dur="0.6s" fill="freeze"/>
+        <text x="106" y="72" text-anchor="middle" font-size="42" font-weight="800" fill="#ffffff">−56%</text>
+        <text x="106" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#f87171">held-out perplexity</text>
+        <text x="106" y="120" text-anchor="middle" font-size="12" fill="#94a3b8">GPT-2 Small, fine-tuned</text>
+      </g>
+      <rect x="24" y="136" width="0" height="3" rx="1.5" fill="#f87171">
+        <animate attributeName="width" from="0" to="164" begin="0.8999999999999999s" dur="1.2s" fill="freeze"/>
+      </rect>
+    </g>
+  </g>
+</svg>
