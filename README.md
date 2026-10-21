@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:0ea5e9&height=190&section=header&text=Rugwesh%20Reddy%20Gankidi&fontColor=ffffff&fontSize=44&fontAlignY=38&desc=Data%20Engineer%20%C2%B7%20Streaming%20%26%20Lakehouse%20%C2%B7%20RAG%20Data%20Layers&descAlignY=60&descSize=17" alt="Rugwesh Reddy Gankidi - Data Engineer" width="100%"/>
+<h1>Rugwesh Reddy Gankidi</h1>
+
+<h3>Data Engineer &nbsp;|&nbsp; Streaming &amp; Lakehouse &nbsp;|&nbsp; RAG Data Layers</h3>
+
+<p><i>Batch &amp; streaming pipelines · Snowflake · Spark · dbt · Airflow · Kafka · Gen AI</i></p>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rugwesh--reddy--gankidi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rugwesh-reddy-gankidi/)
 [![GitHub](https://img.shields.io/badge/GitHub-rugweshreddygankidi--stack-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rugweshreddygankidi-stack)
@@ -132,9 +136,3 @@ A daily pipeline that collects postings from ~480 career sites and job boards, f
 I'm looking for **Data Engineering** opportunities (batch, streaming, lakehouse, and Gen AI data platforms).
 
 [![LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rugwesh-reddy-gankidi/)
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:0f172a&height=100&section=footer" width="100%" alt=""/>
-
-</div>
