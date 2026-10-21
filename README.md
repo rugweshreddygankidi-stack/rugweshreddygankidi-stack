@@ -269,6 +269,36 @@ Every dot below is a skill I used in one of the five projects above. The bar on 
 </div>
 
 <details>
+<summary><b>Same matrix as a text table</b> (click to expand)</summary>
+
+<br/>
+
+| Skill | Claims | Lakehouse | RAG | ML-DriftNet | Job Finder |
+|:--|:--:|:--:|:--:|:--:|:--:|
+| Apache Kafka | ✅ | | | | |
+| Spark Structured Streaming | ✅ | | | | |
+| AWS Kinesis + Lambda | | ✅ | | | |
+| Apache Iceberg | ✅ | ✅ | | | |
+| AWS S3 · Glue · Athena | | ✅ | | | |
+| PostgreSQL + pgvector | | | ✅ | | |
+| Avro + Schema Registry | ✅ | | | | |
+| Dead-letter handling | ✅ | ✅ | | | |
+| Idempotent writes & dedup | ✅ | ✅ | ✅ | | |
+| Great Expectations | | | ✅ | | |
+| Apache Airflow | | | ✅ | | |
+| Python | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Automated tests | ✅ | ✅ | ✅ | | ✅ |
+| CI (GitHub Actions) | ✅ | ✅ | ✅ | | ✅ |
+| Docker | ✅ | | ✅ | | |
+| Terraform | | ✅ | | | |
+| Embeddings + vector search | | | ✅ | | |
+| Retrieval / model evaluation | | | ✅ | ✅ | |
+| PyTorch + Hugging Face | | | | ✅ | |
+| LLM APIs | | | | | ✅ |
+
+</details>
+
+<details>
 <summary><b>Full skill list by category</b> (click to expand)</summary>
 
 <br/>
