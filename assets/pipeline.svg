@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-label="Animated pipeline: records enter a source, pass a contract gate, valid records are transformed, written idempotently into a lakehouse and checked by quality gates and evaluation; invalid records go to a replayable dead-letter queue">
+  <defs>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="r"><rect width="1200" height="370" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect width="1200" height="370" fill="#0b1220"/>
+    <rect width="1200" height="370" rx="18" fill="none" stroke="#1e3a5f"/>
+
+    <text x="36" y="46" font-size="20" font-weight="700" fill="#ffffff">How a record moves through my pipelines</text>
+    <g font-size="12.5" fill="#94a3b8">
+      <circle cx="905" cy="41" r="5" fill="#38bdf8"/><text x="917" y="45">valid record</text>
+      <circle cx="1010" cy="41" r="5" fill="#f87171"/><text x="1022" y="45">invalid record</text>
+      <circle cx="1130" cy="41" r="5" fill="#fbbf24"/><text x="1142" y="45" >replay</text>
+    </g>
+
+    <!-- rails -->
+    <path d="M90 150 H1050" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+    <path d="M90 150 H330 V250" stroke="#f87171" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+    <path d="M405 275 H570 V184" stroke="#fbbf24" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="3 6" fill="none"/>
+    <path d="M1050 182 L990 248" stroke="#34d399" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+    <path d="M1050 182 L1110 248" stroke="#34d399" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+
+    <!-- moving records -->
+    <g filter="url(#glow)">
+      <circle r="5.5" fill="#38bdf8"><animateMotion dur="9s" begin="0s" repeatCount="indefinite" path="M90 150 H1050"/></circle><circle r="5.5" fill="#38bdf8"><animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M90 150 H1050"/></circle><circle r="5.5" fill="#38bdf8"><animateMotion dur="9s" begin="-6s" repeatCount="indefinite" path="M90 150 H1050"/></circle>
+      <circle r="5.5" fill="#f87171"><animateMotion dur="4.5s" repeatCount="indefinite" path="M90 150 H330 V250"/></circle>
+      <circle r="5.5" fill="#f87171"><animateMotion dur="4.5s" begin="-2.25s" repeatCount="indefinite" path="M90 150 H330 V250"/></circle>
+      <circle r="5" fill="#fbbf24"><animateMotion dur="4.5s" begin="-1s" repeatCount="indefinite" path="M405 275 H570 V184"/></circle>
+    </g>
+
+    <g><rect x="15" y="118" width="150" height="64" rx="14" fill="#111c30" stroke="#38bdf8" stroke-opacity="0.7"/><text x="90" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Source</text><text x="90" y="166" text-anchor="middle" font-size="11.5" fill="#94a3b8">Kafka · Kinesis · docs</text></g><g><rect x="255" y="118" width="150" height="64" rx="14" fill="#111c30" stroke="#38bdf8" stroke-opacity="0.7"/><text x="330" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Contract gate</text><text x="330" y="166" text-anchor="middle" font-size="11.5" fill="#94a3b8">schema + business rules</text></g><g><rect x="495" y="118" width="150" height="64" rx="14" fill="#111c30" stroke="#38bdf8" stroke-opacity="0.7"/><text x="570" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Transform</text><text x="570" y="166" text-anchor="middle" font-size="11.5" fill="#94a3b8">dedupe · redact · enrich</text></g><g><rect x="735" y="118" width="150" height="64" rx="14" fill="#111c30" stroke="#38bdf8" stroke-opacity="0.7"/><text x="810" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Idempotent write</text><text x="810" y="166" text-anchor="middle" font-size="11.5" fill="#94a3b8">MERGE · atomic swap</text></g><g><rect x="975" y="118" width="150" height="64" rx="14" fill="#111c30" stroke="#38bdf8" stroke-opacity="0.7"/><text x="1050" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">Lakehouse</text><text x="1050" y="166" text-anchor="middle" font-size="11.5" fill="#94a3b8">Iceberg · pgvector</text></g>
+
+    <!-- dead-letter queue -->
+    <g>
+      <rect x="255" y="250" width="150" height="50" rx="12" fill="#2a1216" stroke="#f87171" stroke-opacity="0.85"/>
+      <text x="330" y="272" text-anchor="middle" font-size="15" font-weight="700" fill="#fecaca">Dead-letter</text>
+      <text x="330" y="289" text-anchor="middle" font-size="11.5" fill="#94a3b8">replayable, with reason</text>
+    </g>
+    <text x="487" y="266" text-anchor="middle" font-size="12" fill="#fbbf24">replay after fix</text>
+
+    <!-- quality + evaluation -->
+    <g>
+      <rect x="930" y="250" width="120" height="50" rx="12" fill="#111c30" stroke="#34d399" stroke-opacity="0.8"/>
+      <text x="990" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Quality gates</text>
+      <text x="990" y="289" text-anchor="middle" font-size="11" fill="#94a3b8">freshness · checks</text>
+      <rect x="1060" y="250" width="120" height="50" rx="12" fill="#111c30" stroke="#34d399" stroke-opacity="0.8"/>
+      <text x="1120" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Evaluation</text>
+      <text x="1120" y="289" text-anchor="middle" font-size="11" fill="#94a3b8">recall@k · MRR</text>
+    </g>
+
+    <text x="600" y="342" text-anchor="middle" font-size="13" fill="#94a3b8">Contract → idempotent write → quality gate → evaluation: the same reliability loop across my streaming, lakehouse and RAG projects.</text>
+  </g>
+</svg>
