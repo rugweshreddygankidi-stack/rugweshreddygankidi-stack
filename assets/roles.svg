@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="46" viewBox="0 0 900 46" role="img" aria-label="Rotating focus areas">
+  <style>
+    text { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 600; fill: #0ea5e9; text-anchor: middle; opacity: 0; }
+    .cursor { fill: #0ea5e9; opacity: 1; animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes show { 0% { opacity: 0; transform: translateY(8px); } 4% { opacity: 1; transform: translateY(0); } 23% { opacity: 1; transform: translateY(0); } 27% { opacity: 0; transform: translateY(-8px); } 100% { opacity: 0; } }
+    .t { animation: show 16s infinite both; }
+    .t1 { animation-delay: 0s; }
+    .t2 { animation-delay: 4s; }
+    .t3 { animation-delay: 8s; }
+    .t4 { animation-delay: 12s; }
+  </style>
+  <text class="t t1" x="450" y="31">Building streaming pipelines with Kafka, Spark and Iceberg</text>
+  <text class="t t2" x="450" y="31">Designing serverless lakehouses on AWS with Terraform</text>
+  <text class="t t3" x="450" y="31">Making RAG retrieval trustworthy with data quality gates</text>
+  <text class="t t4" x="450" y="31">Evaluating ML models with measurable, honest metrics</text>
+</svg>
