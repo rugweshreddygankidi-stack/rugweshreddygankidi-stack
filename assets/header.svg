@@ -42,6 +42,19 @@
     <!-- pipeline strip -->
     <path d="M110 208 H1090" stroke="url(#line)" stroke-width="2"/>
 
+    <!-- data packets flowing through the pipeline -->
+    <g filter="url(#glow)" fill="#fbbf24">
+      <circle r="5">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M110 208 H1090"/>
+      </circle>
+      <circle r="5">
+        <animateMotion dur="6s" begin="-2s" repeatCount="indefinite" path="M110 208 H1090"/>
+      </circle>
+      <circle r="5">
+        <animateMotion dur="6s" begin="-4s" repeatCount="indefinite" path="M110 208 H1090"/>
+      </circle>
+    </g>
+
     <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle">
       <g>
         <rect x="140" y="190" width="120" height="36" rx="10" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.7"/>
@@ -63,19 +76,6 @@
         <rect x="940" y="190" width="120" height="36" rx="10" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.7"/>
         <text x="1000" y="213" fill="#e0f2fe">RAG / AI</text>
       </g>
-    </g>
-
-    <!-- data packets flowing through the pipeline -->
-    <g filter="url(#glow)" fill="#fbbf24">
-      <circle r="5">
-        <animateMotion dur="6s" repeatCount="indefinite" path="M110 208 H1090"/>
-      </circle>
-      <circle r="5">
-        <animateMotion dur="6s" begin="-2s" repeatCount="indefinite" path="M110 208 H1090"/>
-      </circle>
-      <circle r="5">
-        <animateMotion dur="6s" begin="-4s" repeatCount="indefinite" path="M110 208 H1090"/>
-      </circle>
     </g>
 
     <text x="600" y="256" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#7dd3fc" fill-opacity="0.8" letter-spacing="3">
