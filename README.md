@@ -4,6 +4,8 @@
 
 <img src="assets/roles.svg" alt="Building streaming pipelines, designing lakehouses, making RAG retrieval trustworthy, evaluating ML models" width="720"/>
 
+<img src="assets/ticker.svg" alt="Technology ticker: Python, SQL, Kafka, Spark, Iceberg, AWS, Terraform, Airflow, pgvector, Great Expectations, Docker, PyTorch, Snowflake, dbt" width="100%"/>
+
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rugwesh--reddy--gankidi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rugwesh-reddy-gankidi/)
@@ -23,6 +25,23 @@ I'm a **Data Engineer** focused on batch and streaming pipelines, lakehouse stor
 
 My projects are built to be run, not just read. Each one has tests, CI or a reproducible local setup, and a results section that says what was measured and what was only estimated.
 
+<details open>
+<summary><b>⚡ Recruiter quick view (30 seconds)</b></summary>
+
+<br/>
+
+| | |
+|:--|:--|
+| **Target roles** | Data Engineer: batch, streaming, lakehouse, Gen AI data platforms |
+| **Core stack** | Python · SQL · Kafka · Spark Structured Streaming · Iceberg · AWS · Terraform · Airflow · pgvector |
+| **Strongest proof** | [Claims streaming pipeline](https://github.com/rugweshreddygankidi-stack/realtime-claims-event-pipeline) and [AWS serverless lakehouse](https://github.com/rugweshreddygankidi-stack/aws-serverless-streaming-lakehouse): 144 unit tests, CI, schema contracts, dead-letter handling |
+| **Also built** | [RAG data layer](https://github.com/rugweshreddygankidi-stack/rag-data-pipeline) with quality gates and retrieval evaluation, a [GPT-2 fine-tuning study](https://github.com/rugweshreddygankidi-stack/ml-driftnet), an [LLM-ranked job pipeline](https://github.com/rugweshreddygankidi-stack/job-finder) |
+| **Education** | Master's program, University of Massachusetts Dartmouth |
+| **Location** | Massachusetts, USA |
+| **Contact** | [LinkedIn](https://www.linkedin.com/in/rugwesh-reddy-gankidi/) |
+
+</details>
+
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -37,7 +56,7 @@ My projects are built to be run, not just read. Each one has tests, CI or a repr
 <td width="50%" valign="top">
 
 **Ask me about**
-- Exactly-once outcomes from at-least-once delivery
+- Reliable outcomes from at-least-once delivery
 - Schema evolution and registry compatibility rules
 - Retrieval evaluation with recall@k and MRR
 - Evaluating fine-tuned language models honestly
@@ -52,14 +71,7 @@ My projects are built to be run, not just read. Each one has tests, CI or a repr
 
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="25%"><h2>5</h2><sub>end-to-end projects<br/>streaming, lakehouse, RAG, ML, LLM ranking</sub></td>
-<td align="center" width="25%"><h2>144</h2><sub>unit tests across the<br/>two streaming pipelines</sub></td>
-<td align="center" width="25%"><h2>9,830</h2><sub>job postings processed in the<br/>first 4 days of Job Finder</sub></td>
-<td align="center" width="25%"><h2>−56%</h2><sub>held-out perplexity after<br/>fine-tuning GPT-2 Small</sub></td>
-</tr>
-</table>
+<img src="assets/stats.svg" alt="Highlights: 5 end-to-end projects, 144 unit tests across two streaming pipelines, 9,830 job postings processed in 4 days, 91 percent filtered by rules, 56 percent lower held-out perplexity after fine-tuning" width="100%"/>
 
 </div>
 
@@ -67,7 +79,18 @@ My projects are built to be run, not just read. Each one has tests, CI or a repr
 
 ## How I build pipelines
 
-The same reliability pattern shows up across my streaming and RAG projects. This is the reference design I reuse:
+The same reliability pattern shows up across my streaming and RAG projects. Watch a record move through it: valid records flow to the lakehouse, invalid ones are diverted to a dead-letter queue with a reason, and can be replayed after a fix.
+
+<div align="center">
+
+<img src="assets/pipeline.svg" alt="Animated pipeline: records enter a source, pass a contract gate, valid records are transformed and written idempotently into a lakehouse and checked by quality gates and evaluation; invalid records go to a replayable dead-letter queue" width="100%"/>
+
+</div>
+
+<details>
+<summary><b>Prefer a static, zoomable diagram?</b></summary>
+
+<br/>
 
 ```mermaid
 flowchart LR
@@ -81,6 +104,8 @@ flowchart LR
     QG --> OBS["Metrics + alerts"]
     EV --> OBS
 ```
+
+</details>
 
 | Principle | How it shows up | Where |
 |:--|:--|:--|
@@ -235,27 +260,31 @@ flowchart LR
 
 ## Skills
 
-<details open>
-<summary><b>Data engineering core</b></summary>
+Every dot below is a skill I used in one of the five projects above. The bar on the right counts how many projects use it.
+
+<div align="center">
+
+<img src="assets/skills-matrix.svg" alt="Skills matrix showing which technologies were used in which of five projects: Claims pipeline, Streaming lakehouse, RAG pipeline, ML-DriftNet and Job Finder" width="100%"/>
+
+</div>
+
+<details>
+<summary><b>Full skill list by category</b> (click to expand)</summary>
 
 <br/>
+
+**Data engineering core**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
-![Spark Structured Streaming](https://img.shields.io/badge/Structured%20Streaming-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
 ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-</details>
-
-<details open>
-<summary><b>Lakehouse, storage and formats</b></summary>
-
-<br/>
+**Lakehouse, storage and formats**
 
 ![Apache Iceberg](https://img.shields.io/badge/Apache%20Iceberg-3b82f6?style=flat-square)
 ![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
@@ -267,12 +296,7 @@ flowchart LR
 ![Avro](https://img.shields.io/badge/Apache%20Avro-0A66C2?style=flat-square)
 ![Schema Registry](https://img.shields.io/badge/Confluent%20Schema%20Registry-173361?style=flat-square)
 
-</details>
-
-<details open>
-<summary><b>Cloud, infrastructure and delivery</b></summary>
-
-<br/>
+**Cloud, infrastructure and delivery**
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
@@ -286,26 +310,16 @@ flowchart LR
 ![Make](https://img.shields.io/badge/Make-6D00CC?style=flat-square&logo=gnu&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-</details>
-
-<details open>
-<summary><b>Data quality and testing</b></summary>
-
-<br/>
+**Data quality and testing**
 
 ![Great Expectations](https://img.shields.io/badge/Great%20Expectations-FF6310?style=flat-square)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![Data contracts](https://img.shields.io/badge/Data%20Contracts-0ea5e9?style=flat-square)
-![Idempotency](https://img.shields.io/badge/Idempotent%20Writes-0ea5e9?style=flat-square)
+![Idempotent writes](https://img.shields.io/badge/Idempotent%20Writes-0ea5e9?style=flat-square)
 ![Dead-letter handling](https://img.shields.io/badge/Dead--Letter%20Handling-0ea5e9?style=flat-square)
 ![PII redaction](https://img.shields.io/badge/PII%20Redaction-0ea5e9?style=flat-square)
 
-</details>
-
-<details open>
-<summary><b>Gen AI and machine learning</b></summary>
-
-<br/>
+**Gen AI and machine learning**
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
@@ -315,24 +329,6 @@ flowchart LR
 ![Retrieval evaluation](https://img.shields.io/badge/recall%40k%20%2F%20MRR-7c3aed?style=flat-square)
 ![Fine-tuning](https://img.shields.io/badge/Fine--Tuning%20GPT--2-7c3aed?style=flat-square)
 ![LLM APIs](https://img.shields.io/badge/LLM%20APIs-7c3aed?style=flat-square)
-
-</details>
-
-<details>
-<summary><b>Where each skill is proven</b> (click to expand)</summary>
-
-<br/>
-
-| Skill | Evidence |
-|:--|:--|
-| Kafka, Schema Registry, Avro | Claims pipeline: contract enforcement, schema-evolution demo, dead-letter topic |
-| Spark Structured Streaming | Claims pipeline: decode, validate, idempotent Iceberg `MERGE`, progress listener |
-| Iceberg, Glue, Athena, S3 | Lakehouse: partitioned tables, dedup view, bytes-scanned guardrail |
-| Terraform, IAM, SQS, Lambda, Kinesis | Lakehouse: complete infrastructure as code with failure isolation |
-| Airflow, pgvector, Great Expectations | RAG pipeline: incremental DAG, HNSW index, quality and freshness gates |
-| Retrieval evaluation | RAG pipeline: recall@5 and MRR on a labeled benchmark |
-| PyTorch, Hugging Face, fine-tuning | ML-DriftNet: GPT-2 Small fine-tune with five-metric evaluation |
-| LLM APIs, SQLite, pandas, CI | Job Finder: budget-planned LLM scoring, history database, offline end-to-end test |
 
 </details>
 
@@ -346,7 +342,7 @@ Mostly taken from the "next steps" and "limitations" lists in my own repositorie
 - [ ] Schema-id-aware decoding so one Kafka topic can safely carry mixed schema versions
 - [ ] Move the claims pipeline from a local catalog to an object-store catalog (Glue, Nessie or REST)
 - [ ] LoRA / QLoRA comparison and a larger held-out set for ML-DriftNet
-- [ ] Snowflake and dbt modeling layer on top of the lakehouse outputs
+- [ ] Snowflake and dbt modeling layer on top of the lakehouse outputs *(learning goal)*
 
 ---
 
